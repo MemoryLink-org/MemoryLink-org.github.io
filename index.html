@@ -16,10 +16,11 @@
 
 <body>
   <!-- <h1>MemoryLink Telegram Bot</h1> -->
-  <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-body-tertiary">
-    <div class="col-md-6 p-lg-5 mx-auto my-5">
-      <h1 class="display-3 fw-bold">MemoryLink Telegram Bot</h1>
-      <h3 class="fw-normal text-muted mb-3">Create and review your flashcards</h3>
+  <div class="position-relative overflow-hidden p-1 p-md-3 m-md-1 text-center bg-body-tertiary">
+    <div class="col-md-6 p-lg-1 mx-auto my-1">
+      <img id="logo" alt="Logo GIF" class="img-fluid rounded" width="275" height="275">
+      <h1 class="display-3 fw-bold">MemoryLink</h1>
+      <h3 class="fw-normal text-muted mb-3">Smart Telegram bot for flashcards</h3>
       <div class="d-flex gap-3 justify-content-center lead fw-normal">
         <a href="https://t.me/MemoryLink_bot" type="button" class="btn btn-outline-primary">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telegram"
@@ -32,12 +33,19 @@
         </a>
       </div>
     </div>
-    <div class="product-device shadow-sm d-none d-md-block"></div>
-    <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+    <div class="product-device shadow-sm d-none d-lg-block"></div>
+    <div class="product-device product-device-2 shadow-sm d-none d-lg-block"></div>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
     crossorigin="anonymous"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const logo = document.getElementById("logo");
+      logo.src = "/img/logo.webp?t=" + Date.now();
+    });
+  </script>
+
 </body>
 
 </html>
